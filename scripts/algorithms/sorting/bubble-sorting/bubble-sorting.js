@@ -15,8 +15,8 @@ function bubbleSorting(array, order = true) {
         for (let j = 0; j < length - i - 1; j++) {
             if (
                 order ? 
-                newArray[j] > newArray [j+1] : 
-                newArray[j] < newArray [j+1]
+                newArray[j] > newArray [j + 1] : // ascending  order
+                newArray[j] < newArray [j + 1]   // descending order
                 ) {
                 let temp = newArray[j];
                 newArray[j] = newArray[j + 1];
@@ -27,3 +27,6 @@ function bubbleSorting(array, order = true) {
 
     return newArray;
 }
+
+console.log('test');
+bubbleSorting([0, 20, 10, 5, 3, 7, 9]);
